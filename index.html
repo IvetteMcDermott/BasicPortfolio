@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<!--  assign the first theme to the body -->
+
+<body class="dark">
+    <!-- input the toggle to the btn onclick -->
+    <header class="d-flex  justify-content-between">
+        <div>
+            <img src="/assets/namelogo.png" style="width: 60%;">
+        </div>
+        <div class="theme-swap">
+            <!-- Rounded switch --><span>🌙</span>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleBtn()">
+                <span class="slider round"></span>
+            </label><span>☀️</span>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/index.html" class="active"> 🙋🏻‍♀️ About</a></li>
+            <li><a href="/projects.html">🗃️ My Projects</a></li>
+            <li><a href="/assets/CV-Nathalie-Ivette-McDermott.pdf" target="_blank"> ⬇️ My CV </a></li>
+            <li><a href="/contact_me.html"> 📝 Contact Me </a></li>
+        </ul>
+    </nav>
+
+    <!---->
+    <div id="about" class="divsize  pt-5">
+        <div class="imageRound">
+            <img class="meImage" src="https://res.cloudinary.com/dwjq6izv5/image/upload/v1699891517/myself_w9zuam.png"
+                alt="img" />
+        </div>
+        <h1 class="pageTitle ">About Me</h1>
+        <div id="about_content" class="text-justify mt-5">
+            <p>
+                As a junior software developer with a diploma in Full Stack Software
+                Development from the Code Institute, I bring a unique blend of skills
+                and experiences to the world of software development. With 17 years of
+                experience in administrative roles, coupled with a strong foundation
+                in coding, I'm well-equipped to contribute effectively in a
+                collaborative and dynamic development team. At the moment I am currently enrolled at National College of
+                Ireland, in a Certificate in Computing course, where among other skills I am learning Java. Exercises on
+                Java can be found in my GitHub.
+            </p>
+            <br />
+            <details>
+                <summary>Some more</summary>
+
+                <div>
+                    <br />
+                    <p>
+                        Throughout my career, I've honed essential skills in customer
+                        service, effective problem-solving, and exceptional communication.
+                        These skills have not only shaped me as a professional but have
+                        also instilled in me the value of teamwork and cooperation. I
+                        thrive in a collaborative environment, understanding the
+                        importance of working together to achieve common goals.
+                    </p>
+                    <br />
+                    <p>
+                        I am passionate about coding and constantly seek opportunities to
+                        learn new technologies, staying on the cutting edge of the
+                        ever-evolving tech landscape. During my time at Code Institute, I
+                        stepped up as a Cohort Lead, conducting weekly sessions to support
+                        and motivate fellow learners. Additionally, I took the lead on
+                        several group projects, gaining valuable experience in GitHub
+                        Board and version control. I truly value the power of teamwork! I
+                        approach group projects with enthusiasm, as they provide a
+                        platform to harness creativity and achieve extraordinary results.
+                    </p>
+                    <br />
+                    <p>
+                        In summary, I'm an aspiring software developer with a strong
+                        background in administration, a passion for coding, and a
+                        dedication to lifelong learning. I am eager to join an exciting
+                        development team where I can contribute, grow, and continue my
+                        journey of exploration and innovation in the ever-evolving field
+                        of software development.
+                    </p>
+                </div>
+            </details>
+            <br />
+            <p>Thanks for visiting!</p>
+        </div>
+        <div class="flex justify-around my-8 w-11/12 mb-5">
+            <a type="button" class="btn btn-outline-success" href="https://www.linkedin.com/in/ivette-mc-dermott/"
+                target="_blank">My
+                LinkedIn</a>
+
+            <a type="button" class="btn btn-outline-success" href="https://github.com/IvetteMcDermott"
+                target="_blank">My
+                GitHub</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- https://medium.com/@amyabafor013/how-to-create-different-color-themes-with-css-and-javascript-d2ff1e66ce08 -->
+    <script>
+        // toggle between themes, themes contain the variables for colors
+        function toggleBtn() {
+            document.body.classList.toggle("bright");
+            const theme = document.body.classList.contains("bright") ? "bright" : "dark";
+            localStorage.setItem("theme", theme);
+        }
+
+        window.onload = function () {
+            const theme = localStorage.getItem("theme");
+            if (theme) {
+                // Apply the stored theme preference
+                document.body.classList.toggle("bright", theme === "bright");
+            }
+        };
+    </script>
+
+
+
+</body>
+
+</html>
