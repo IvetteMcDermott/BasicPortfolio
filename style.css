@@ -146,7 +146,8 @@ input:checked + .slider:before {
 .navbar ul li a {
   display: block;
   text-decoration: none;
-  color: #2d2e83;
+  color: var(---text-primary);
+  font-weight: 500;
   padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
