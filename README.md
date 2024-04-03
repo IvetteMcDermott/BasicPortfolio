@@ -2,15 +2,15 @@
 
 # MY PORTFOLIO
 
-Basic version of my portfolio. 
-Developed in HMTL, CSS, Bootstrap and JS.
-Main functionality:   Theme swap 
-                      NavBar to the 3 pages and open the CV in pdf to download
-                      Introduction with links to my linkedIn and GitHub
-                      Page with display of Bootcamp assesement projects, links to their repo and live sites
-                      EmailJs form to send email to myself
+Basic version of my portfolio. <br>
+Developed in HMTL, CSS, Bootstrap and JS.<br>
+Main functionality: <br> &nbsp;&nbsp;&nbsp;&nbsp; Theme swap, Dark/Bright <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; NavBar to the 3 pages and open the CV in pdf to download<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; Introduction with links to my linkedIn and GitHub<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; Page with display of Bootcamp assessments projects, links to their repo and live sites<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp; EmailJs form to send email to myself<br>
 Deployed in GitHub Pages https://ivettemcdermott.github.io/BasicPortfolio/
 <br>
 <br>
-                      ![N IVETTE MCDERMOTT](https://github.com/IvetteMcDermott/BasicPortfolio/assets/107407603/e0cc39f1-31da-48cd-a01f-775a5ba732ea)
+                      ![N IVETTE MCDERMOTT](assets/namelogo.png)
 
