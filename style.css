@@ -245,7 +245,7 @@ nav ul li a.active {
   height: 98%;
   top: 0.75%;
   left: 1.15%;
-  background-color: #a29c9c;
+  background-color: var(---background);
   border-radius: 50%;
   position: relative;
   z-index: 2;
