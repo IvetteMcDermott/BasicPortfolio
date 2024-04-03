@@ -12,12 +12,12 @@ h4 {
 .dark {
   ---background: #14151a;
   ---card-border: #0b0e11;
-  ---text: #efeaea;
+  ---text: #efeaeacd;
   ---text-primary: #e7be1b;
 }
 
 .bright {
-  ---background: #ece9e9;
+  ---background: #d0cdcde2;
   ---card-border: #c4c4cf;
   ---text: #424040;
   ---text-primary: #2d2e83;
@@ -321,6 +321,10 @@ details[open] summary::before {
   padding: 3rem;
 }
 
+.form-control {
+  background-color: #f8f9fad1;
+  border: solid 0.5px #07256966;
+}
 /* ---- */
 
 #carouselExampleIndicators {
