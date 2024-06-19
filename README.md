@@ -1,4 +1,4 @@
-![Home](imagesReadMe\ss-home.png)
+![](imagesReadMe/ss-home.png)
 
 # MY PORTFOLIO
 
